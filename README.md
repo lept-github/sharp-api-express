@@ -13,7 +13,7 @@ Welcome to the documentation for sharp-api-express. It wraps the functionality o
 
 Once the image is built, you can run it in a containerized environment.
 
-`$ sudo docker run -p 8000:8000 your-image-name`
+`$ sudo docker run -p 3000:3000 your-image-name`
 
 ## Endpoint
 
