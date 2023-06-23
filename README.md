@@ -19,12 +19,14 @@ Once the image is built, you can run it in a containerized environment.
 
 `POST /v1/sharp/:operation`
 
-### Breakdown
+### Request
 
 - `:operation`: it accepts all the "Image Operation" and "Colour Manipulation" from the [Sharp Documentation](https://sharp.pixelplumbing.com).
 
-- `image`: belongs in the request body, and it is the base64-encoded image data.
+- `image`: form data that resides in the request body, and it is the base64-encoded image data.
 
-- `options` corresponds to the parameters accepted by the operation called.
+- `options` form data that resides in the request body, corresponds to the parameters accepted by the operation called.
 
+### Response
 
+- `Content-Type`: will be the same as the image provided in the request.
